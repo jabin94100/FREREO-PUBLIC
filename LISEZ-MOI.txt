@@ -1,4 +1,4 @@
-LES FRÉR'O — V29 / Envoi de devis SMTP2GO
+LES FRÉR'O — V63 / Envoi de devis SMTP2GO
 
 1. Hébergement : PHP 8.1+ avec HTTPS sortant (cURL recommandé, ou allow_url_fopen et OpenSSL).
    Mettre le contenu de public/ dans la racine web (souvent public_html ou www).
@@ -15,7 +15,8 @@ LES FRÉR'O — V29 / Envoi de devis SMTP2GO
 4. Ouvrir le site via HTTPS, remplir le formulaire et vérifier l'arrivée du message dans la boîte de réception.
    Le Reply-To est l'adresse du client. Le formulaire confirme l'acceptation par l'API, pas la livraison finale.
    Contrôler également l'activité SMTP2GO. SMTP2GO n'est pas un hébergeur de boîte de réception.
-5. Le fichier HTML autonome sert à prévisualiser le site, pas à envoyer un vrai mail.
+5. Décompresser le ZIP et ouvrir public/index.html dans un navigateur pour voir la V63. L’envoi du formulaire nécessite un hébergement PHP configuré. Déployer le dossier images avec index.html.
+6. Avant la mise en ligne publique, remplacer le numéro d’exemple 04 65 71 00 46 par le numéro professionnel dans les deux liens d’appel et compléter les mentions légales.
 
 Protection de base : champ piège, validation serveur, destinataire fixe, limitation à 4 demandes/15 min/IP et 30/h au total, sans stockage des messages côté site. Nettoyer périodiquement les anciens fichiers private/rate/ (après expiration). Si le site est derrière un proxy, adapter la limitation IP à la configuration de confiance de l'hébergeur. En cas de spam, envisager un CAPTCHA ou une protection supplémentaire côté hébergeur. Compléter les mentions de confidentialité (durée de conservation, droits, prestataire SMTP2GO) avant publication.
 
